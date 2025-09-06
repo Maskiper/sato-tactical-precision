@@ -27,8 +27,12 @@ const Navigation = () => {
       <div className="container-premium">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold tracking-tight">SATO</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
+              alt="SATO Logo" 
+              className="h-8"
+            />
             <span className="text-tactical text-muted-foreground hidden md:inline">
               Solving Advanced Tactical Objectives
             </span>
@@ -41,6 +45,12 @@ const Navigation = () => {
               className="tactical-link text-sm"
             >
               Personal
+            </button>
+            <button 
+              onClick={() => scrollToSection('drones')}
+              className="tactical-link text-sm"
+            >
+              Drones
             </button>
             <button 
               onClick={() => scrollToSection('company')}

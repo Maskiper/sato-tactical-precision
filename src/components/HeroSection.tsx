@@ -24,20 +24,24 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container-premium relative z-10">
         <div className="max-w-6xl mx-auto text-center">
-          {/* Main Headline */}
+          {/* Logo and Headline */}
           <div className="animate-fade-in">
+            <img 
+              src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
+              alt="SATO Logo" 
+              className="h-20 mx-auto mb-6"
+            />
             <h1 className="text-display mb-6 leading-none">
-              Engineering the
-              <span className="block text-primary">Future of Precision</span>
+              <span className="block text-primary">Private Military Contractor</span>
+              Advanced Tactical Solutions
             </h1>
           </div>
 
           {/* Subheadline */}
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">
-              From mastering code at 11 to holding national records at 16, I've dedicated my life to pushing 
-              the boundaries of tactical engineering. SATO represents the convergence of personal excellence 
-              and revolutionary technology.
+              SATO delivers cutting-edge defense systems, precision engineering, and tactical solutions 
+              to military and government agencies worldwide. From autonomous drone systems to ballistic manufacturing.
             </p>
           </div>
 
@@ -62,20 +66,20 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="animate-fade-in mt-16 grid grid-cols-2 md:grid-cols-4 gap-8" style={{ animationDelay: '0.6s' }}>
             <div className="text-center">
-              <div className="text-3xl font-bold">11</div>
-              <div className="text-tactical text-muted-foreground">AGE MASTERED C++</div>
+              <div className="text-3xl font-bold">14</div>
+              <div className="text-tactical text-muted-foreground">YEARS UAV DEVELOPMENT</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold">800M</div>
-              <div className="text-tactical text-muted-foreground">NATIONAL RECORD</div>
+              <div className="text-tactical text-muted-foreground">PRECISION RECORD</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold">.308</div>
-              <div className="text-tactical text-muted-foreground">PRECISION RIFLES</div>
+              <div className="text-tactical text-muted-foreground">BALLISTIC SYSTEMS</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold">∞</div>
-              <div className="text-tactical text-muted-foreground">POSSIBILITIES</div>
+              <div className="text-tactical text-muted-foreground">TACTICAL SOLUTIONS</div>
             </div>
           </div>
         </div>
