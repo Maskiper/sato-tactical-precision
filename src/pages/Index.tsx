@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from "react";
+import LoadingAnimation from "@/components/LoadingAnimation";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import PersonalSection from "@/components/PersonalSection";
+import CompanySection from "@/components/CompanySection";
+import CapabilitiesSection from "@/components/CapabilitiesSection";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    // Prevent scrolling during loading
+    if (isLoading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isLoading]);
+
+  if (isLoading) {
+    return <LoadingAnimation onComplete={handleLoadingComplete} />;
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <HeroSection />
+      <PersonalSection />
+      <CompanySection />
+      <CapabilitiesSection />
+      <ContactSection />
     </div>
   );
 };

@@ -19,18 +19,31 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: "hsl(var(--surface))",
+        "surface-variant": "hsl(var(--surface-variant))",
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          muted: "hsl(var(--primary-muted))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        
+        hover: "hsl(var(--hover))",
+        "hover-foreground": "hsl(var(--hover-foreground))",
+        active: "hsl(var(--active))",
+        
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        warning: "hsl(var(--warning))",
+        success: "hsl(var(--success))",
+        info: "hsl(var(--info))",
+        
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -39,29 +52,28 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+      },
+      
+      fontFamily: {
+        primary: ["var(--font-family-primary)"],
+        mono: ["var(--font-family-mono)"],
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius-lg)",
+        md: "var(--radius)",
+        sm: "calc(var(--radius) - 2px)",
+        xl: "var(--radius-xl)",
+      },
+      
+      boxShadow: {
+        'premium': 'var(--shadow-premium)',
+        'tactical': 'var(--shadow-tactical)',
+        'subtle': 'var(--shadow-subtle)',
+      },
+      
+      transitionTimingFunction: {
+        'premium': 'var(--ease-premium)',
+        'tactical': 'var(--ease-tactical)',
       },
       keyframes: {
         "accordion-down": {
