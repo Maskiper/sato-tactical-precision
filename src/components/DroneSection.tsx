@@ -47,8 +47,8 @@ const DroneSection = () => {
             
             <p className="text-body text-muted-foreground mb-8">
               SATO has been pioneering unmanned aerial vehicle technology since age 14. Our custom-engineered 
-              drone platforms feature military-grade avionics, autonomous flight systems, and modular payload 
-              configurations for diverse tactical applications.
+              drone platforms feature military-grade avionics, autonomous flight systems, homing and telemetry 
+              development used in fleet operations, and modular payload configurations for diverse tactical applications.
             </p>
 
             {/* Technical Specifications */}
@@ -77,11 +77,13 @@ const DroneSection = () => {
             </div>
 
             <div className="flex gap-4">
-              <Button variant="tactical">
-                VIEW SPECIFICATIONS
+              <Button variant="tactical" className="group relative overflow-hidden">
+                <span className="relative z-10">VIEW SPECIFICATIONS</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
-              <Button variant="outline">
-                REQUEST DEMO
+              <Button variant="outline" className="group relative overflow-hidden">
+                <span className="relative z-10">REQUEST DEMO</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-surface/50 to-surface opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
             </div>
           </div>

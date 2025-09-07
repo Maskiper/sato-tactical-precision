@@ -25,13 +25,13 @@ const Navigation = () => {
       isScrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border' : 'bg-transparent'
     }`}>
       <div className="container-premium">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
               alt="SATO Logo" 
-              className="h-8"
+              className="h-10"
             />
             <span className="text-tactical text-muted-foreground hidden md:inline">
               Solving Advanced Tactical Objectives

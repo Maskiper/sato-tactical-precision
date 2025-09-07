@@ -29,11 +29,10 @@ const HeroSection = () => {
             <img 
               src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
               alt="SATO Logo" 
-              className="h-20 mx-auto mb-6"
+              className="h-28 mx-auto mb-8"
             />
             <h1 className="text-display mb-6 leading-none">
-              <span className="block text-primary">Private Military Contractor</span>
-              Advanced Tactical Solutions
+              Advanced Military Tactical Solutions
             </h1>
           </div>
 

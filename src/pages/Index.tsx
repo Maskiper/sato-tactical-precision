@@ -3,8 +3,9 @@ import LoadingAnimation from "@/components/LoadingAnimation";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import PersonalSection from "@/components/PersonalSection";
-import DroneSection from "@/components/DroneSection";
 import CompanySection from "@/components/CompanySection";
+import BallisticsSection from "@/components/BallisticsSection";
+import DroneSection from "@/components/DroneSection";
 import AutomotiveSection from "@/components/AutomotiveSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import ContactSection from "@/components/ContactSection";
@@ -38,8 +39,9 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <PersonalSection />
-      <DroneSection />
       <CompanySection />
+      <BallisticsSection />
+      <DroneSection />
       <AutomotiveSection />
       <CapabilitiesSection />
       <ContactSection />

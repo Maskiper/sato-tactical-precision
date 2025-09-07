@@ -33,7 +33,7 @@ const LoadingAnimation = ({ onComplete }: LoadingAnimationProps) => {
           <img 
             src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
             alt="SATO Logo" 
-            className="h-16 mx-auto mb-4"
+            className="h-24 mx-auto mb-6"
           />
           <p className="text-tactical text-muted-foreground mt-2">
             Solving Advanced Tactical Objectives
