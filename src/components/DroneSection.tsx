@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import droneImage from "@/assets/tactical-drone.jpg";
+import droneImage from "@/assets/hero-drone.jpg";
 
 const DroneSection = () => {
   const [hoveredSpec, setHoveredSpec] = useState<string | null>(null);
@@ -52,7 +52,7 @@ const DroneSection = () => {
             </p>
 
             {/* Technical Specifications */}
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4 mb-12">
               <h3 className="text-heading text-foreground mb-4">Technical Specifications</h3>
               {specifications.map((spec, index) => (
                 <div 
@@ -68,7 +68,7 @@ const DroneSection = () => {
                   
                   {/* Hover Detail */}
                   {hoveredSpec === spec.title && (
-                    <div className="absolute left-0 top-full mt-2 w-full p-4 bg-surface border border-border rounded-lg shadow-tactical z-10 animate-scale-in">
+                    <div className="absolute left-0 top-full mt-2 w-full p-4 bg-surface border border-border rounded-lg shadow-tactical z-20 animate-scale-in">
                       <p className="text-tactical text-muted-foreground">{spec.detail}</p>
                     </div>
                   )}

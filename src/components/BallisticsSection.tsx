@@ -17,8 +17,8 @@ const BallisticsSection = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent rounded-lg" />
           
           <div className="absolute bottom-8 left-8">
-            <h3 className="text-heading-2 text-primary-foreground mb-2">Precision. Performance. Purpose.</h3>
-            <p className="text-body text-primary-foreground/80">
+            <h3 className="text-heading-2 text-muted-foreground mb-2">Precision. Performance. Purpose.</h3>
+            <p className="text-body text-muted-foreground/80">
               Where engineering excellence meets tactical objectives
             </p>
           </div>
@@ -34,7 +34,7 @@ const BallisticsSection = () => {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <Badge variant="secondary">BALLISTICS MANUFACTURING</Badge>
-            <Badge variant="outline">ARMY & POF CONTRACTS</Badge>
+            <Badge variant="outline">Ultimate Precision</Badge>
           </div>
           
           <h2 className="text-display-small mb-6">
