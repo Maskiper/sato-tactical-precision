@@ -31,7 +31,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/eb3d11fc-8294-4b1b-b785-f08fac3557ec.png" 
               alt="SATO Logo" 
-              className="h-10"
+              className="h-16"
             />
             <span className="text-tactical text-muted-foreground hidden md:inline">
               Solving Advanced Tactical Objectives

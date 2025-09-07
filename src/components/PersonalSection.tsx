@@ -13,7 +13,7 @@ const PersonalSection = () => {
       tech: ["Ballistics", "Precision Engineering", "Performance Analytics"]
     },
     {
-      age: "Present",
+      age: "19",
       title: "Global Operations",
       description: "Founded and operates a BPO center in Pakistan, utilizing strategic geographical advantages and cost optimization for international clients.",
       tech: ["Business Operations", "International Trade", "Strategic Planning"]
