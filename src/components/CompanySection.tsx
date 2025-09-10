@@ -29,7 +29,7 @@ const CompanySection = () => {
         <div className="text-center mb-16">
           <h2 className="text-heading-1 mb-6">SATO Divisions</h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
-            Three distinct verticals united by a singular vision: pushing the boundaries 
+            Four distinct verticals united by a singular vision: pushing the boundaries 
             of what's possible through precision engineering and tactical innovation. Each division 
             operates with military-grade standards and delivers solutions that exceed operational requirements.
           </p>

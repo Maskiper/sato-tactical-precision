@@ -7,6 +7,7 @@ import CompanySection from "@/components/CompanySection";
 import BallisticsSection from "@/components/BallisticsSection";
 import DroneSection from "@/components/DroneSection";
 import AutomotiveSection from "@/components/AutomotiveSection";
+import RoboticsSection from "@/components/RoboticsSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import ContactSection from "@/components/ContactSection";
 
@@ -43,6 +44,7 @@ const Index = () => {
       <BallisticsSection />
       <DroneSection />
       <AutomotiveSection />
+      <RoboticsSection />
       <CapabilitiesSection />
       <ContactSection />
     </div>
