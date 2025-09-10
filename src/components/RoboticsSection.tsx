@@ -114,6 +114,44 @@ const RoboticsSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               
               {/* Placeholder for Robot Image */}
+<<<<<<< HEAD
+      <div className="w-full h-full scale-90 bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center relative overflow-hidden">
+        
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+              `,
+              backgroundSize: "20px 20px",
+            }}
+          />
+        </div>
+
+        {/* Robot Image Full Size */}
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
+            alt="Enhanced Tactical Humanoid E3N Series"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+                {/* Captions Overlay */}
+        <div className="absolute bottom-6 w-full text-center">
+          <p className="text-sm font-mono tracking-widest uppercase text-cyan-400">
+            Enhanced Tactical Humanoid
+          </p>
+          <p className="text-xs font-mono text-slate-400">
+            Revision 3.0
+          </p>
+        </div>
+      </div>
+
+=======
               <div className="w-full h-full bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center relative overflow-hidden">
                 {/* Grid Pattern Overlay */}
                 <div className="absolute inset-0 opacity-10">
@@ -125,13 +163,14 @@ const RoboticsSection = () => {
                     backgroundSize: '20px 20px'
                   }} />
                 </div>
+>>>>>>> d82e6707aa6305504a2f3530b9eb15bca3e64ea0
                 
                 {/* Robot Image */}
                 <div className="text-center">
                   <img 
                     src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
                     alt="Enhanced Tactical Humanoid E3N Series"
-                    className="w-64 h-64 mx-auto mb-4 object-contain rounded-lg"
+                    className="w-full h-full mx-auto mb-4 object-contain rounded-lg"
                   />
                   <p className="text-caption font-mono">Enhanced Tactical Humanoid</p>
                   <p className="text-caption font-mono text-muted-foreground">3rd Revision</p>
