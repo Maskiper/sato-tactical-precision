@@ -126,16 +126,16 @@ const RoboticsSection = () => {
                   }} />
                 </div>
                 
-                {/* Robot Image */}
-                <div className="text-center">
-                  <img 
-                    src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
-                    alt="Enhanced Tactical Humanoid E3N Series"
-                    className="w-64 h-64 mx-auto mb-4 object-contain rounded-lg"
-                  />
-                  <p className="text-caption font-mono">Enhanced Tactical Humanoid</p>
-                  <p className="text-caption font-mono text-muted-foreground">3rd Revision</p>
-                </div>
+               {/* Robot Image */}
+<div className="text-center">
+  <img 
+    src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
+    alt="Enhanced Tactical Humanoid E3N Series"
+    className="w-full h-full object-cover mx-auto mb-4 rounded-lg"
+  />
+  <p className="text-caption font-mono">Enhanced Tactical Humanoid</p>
+  <p className="text-caption font-mono text-muted-foreground">3rd Revision</p>
+</div>
                 
                 {/* Tech Lines */}
                 <div className="absolute top-1/4 left-8 w-16 h-px bg-primary/30" />
