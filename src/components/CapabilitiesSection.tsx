@@ -206,6 +206,64 @@ const CapabilitiesSection = () => {
           </div>
         </div>
 
+        {/* Programming Languages Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-heading-2 mb-4">Programming Arsenal</h3>
+            <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
+              Mastery across the technological spectrum, from low-level systems programming 
+              to high-level application development and data science.
+            </p>
+          </div>
+
+          <div className="relative min-h-[400px] overflow-hidden">
+            {/* Floating Programming Languages */}
+            <div className="flex flex-wrap justify-center gap-6">
+              {[
+                "Python", "JavaScript", "TypeScript", "Java", "C#", "C++", 
+                "Go", "Rust", "Kotlin", "Swift", "PHP", "Ruby", "SQL", 
+                "PostgreSQL", "MySQL", "R", "MATLAB", "Dart", "Flutter", 
+                "Scala", "Perl", "Haskell", "Elixir", "Lua"
+              ].map((language, index) => (
+                <div
+                  key={index}
+                  className="group relative cursor-pointer animate-fade-in"
+                  style={{ 
+                    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                    width: '80px',
+                    height: '80px',
+                    animationDelay: `${index * 0.1}s`
+                  }}
+                >
+                  {/* Hexagon Background */}
+                  <div 
+                    className="absolute inset-0 bg-muted border border-border group-hover:bg-primary group-hover:border-primary transition-all duration-300 hover:scale-110"
+                    style={{ clipPath: 'inherit' }}
+                  />
+                  
+                  {/* Content */}
+                  <div className="relative z-10 h-full flex items-center justify-center p-2 text-center">
+                    <span className="text-foreground group-hover:text-primary-foreground text-xs font-mono font-semibold leading-tight transition-colors duration-300">
+                      {language}
+                    </span>
+                  </div>
+
+                  {/* Floating Animation */}
+                  <div className="absolute inset-0 animate-pulse opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              ))}
+            </div>
+
+            {/* Background Animation */}
+            <div className="absolute inset-0 -z-10">
+              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-pulse" />
+              <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-accent/30 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+              <div className="absolute top-1/2 left-1/3 w-1.5 h-1.5 bg-primary/15 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+              <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }} />
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-border">

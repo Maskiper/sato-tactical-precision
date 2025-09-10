@@ -41,11 +41,21 @@ const AutomotiveSection = () => {
                   Revolutionary automotive solutions merging tactical precision with performance engineering
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button variant="premium" disabled>
-                    NOTIFY ME
+                  <Button 
+                    variant="premium" 
+                    onClick={() => window.open('mailto:contact@satotech.com?subject=Automotive Division Notification Request', '_blank')}
+                    className="group relative overflow-hidden"
+                  >
+                    <span className="relative z-10">NOTIFY ME</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </Button>
-                  <Button variant="outline" disabled>
-                    LEARN MORE
+                  <Button 
+                    variant="outline" 
+                    onClick={() => window.open('#automotive', '_self')}
+                    className="group relative overflow-hidden"
+                  >
+                    <span className="relative z-10">LEARN MORE</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-surface/50 to-surface opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </Button>
                 </div>
               </div>
