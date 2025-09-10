@@ -104,6 +104,102 @@ const CapabilitiesSection = () => {
           </div>
         </div>
 
+        {/* Personal Expertise */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-heading-2 mb-4">Architect of Innovation</h3>
+            <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
+              A multidisciplinary engineer with an extraordinary breadth of expertise, 
+              seamlessly bridging the gap between theoretical knowledge and practical excellence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                skill: "Mechanical Engineering",
+                description: "Master of precision mechanics, advanced material science, and computational fluid dynamics. Expertise in finite element analysis, thermodynamics, and cutting-edge manufacturing processes.",
+                icon: "⚙️",
+                gradient: "from-blue-500/20 to-cyan-500/20"
+              },
+              {
+                skill: "Automotive Engineering",
+                description: "Elite performance systems architect specializing in high-performance engine dynamics, advanced suspension geometries, and aerodynamic optimization for competitive motorsports.",
+                icon: "🏁",
+                gradient: "from-red-500/20 to-orange-500/20"
+              },
+              {
+                skill: "Web Development & Interactive Design",
+                description: "Full-stack development virtuoso crafting immersive digital experiences with cutting-edge frameworks, responsive architectures, and stunning user interface design.",
+                icon: "💻",
+                gradient: "from-purple-500/20 to-pink-500/20"
+              },
+              {
+                skill: "Digital Marketing & Media Strategy",
+                description: "Strategic brand architect with mastery in data-driven campaigns, omnichannel marketing automation, and compelling multimedia content that drives measurable results.",
+                icon: "📈",
+                gradient: "from-green-500/20 to-emerald-500/20"
+              },
+              {
+                skill: "Applied Mathematics & Data Analysis",
+                description: "Advanced analytical expert leveraging complex algorithms, predictive modeling, statistical analysis, and machine learning to extract actionable insights from complex datasets.",
+                icon: "📊",
+                gradient: "from-indigo-500/20 to-blue-500/20"
+              },
+              {
+                skill: "Animal Nutrition",
+                description: "Specialized biochemist with deep expertise in metabolic pathways, nutritional optimization, and the intricate relationship between dietary science and biological performance.",
+                icon: "🧬",
+                gradient: "from-amber-500/20 to-yellow-500/20"
+              },
+              {
+                skill: "Aerospace & Mechanical Concepts",
+                description: "Aerospace systems engineer with comprehensive knowledge of flight dynamics, propulsion systems, structural analysis, and advanced materials for extreme environment applications.",
+                icon: "🚀",
+                gradient: "from-slate-500/20 to-gray-500/20"
+              }
+            ].map((expertise, index) => (
+              <div
+                key={index}
+                className={`group relative p-6 bg-gradient-to-br ${expertise.gradient} border border-border rounded-xl hover:shadow-tactical transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden`}
+              >
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent transform rotate-12 scale-150" />
+                </div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {expertise.icon}
+                  </div>
+                  <h4 className="text-heading-4 mb-3 group-hover:text-primary transition-colors duration-300">
+                    {expertise.skill}
+                  </h4>
+                  <p className="text-body-small text-muted-foreground group-hover:text-foreground transition-colors duration-300 leading-relaxed">
+                    {expertise.description}
+                  </p>
+                </div>
+
+                {/* Hover Effects */}
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300" />
+              </div>
+            ))}
+          </div>
+
+          {/* Excellence Statement */}
+          <div className="mt-12 text-center">
+            <div className="inline-block p-8 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl border border-border/50">
+              <p className="text-body-large text-muted-foreground italic max-w-4xl">
+                "Excellence is not a destination, but a relentless pursuit of perfection across every discipline. 
+                Where others see boundaries between fields, I see opportunities for revolutionary integration."
+              </p>
+              <div className="mt-4 w-24 h-0.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-border">
