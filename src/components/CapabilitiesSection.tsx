@@ -167,7 +167,7 @@ const CapabilitiesSection = () => {
                 >
                   {/* Hexagon Background */}
                   <div 
-                    className="absolute inset-0 bg-black border-2 border-white group-hover:bg-white group-hover:border-black transition-all duration-500"
+                    className="absolute inset-0 bg-black border-2 border-white group-hover:bg-white transition-all duration-500"
                     style={{ clipPath: 'inherit' }}
                   />
                   
