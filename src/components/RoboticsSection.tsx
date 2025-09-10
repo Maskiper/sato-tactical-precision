@@ -110,7 +110,7 @@ const RoboticsSection = () => {
 
           {/* Robot Image/Visual */}
           <div className="relative">
-            <div className="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg border border-border overflow-hidden">
+            <div className="aspect-[4/5] bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg border border-border overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               
               {/* Placeholder for Robot Image */}
@@ -126,14 +126,16 @@ const RoboticsSection = () => {
                   }} />
                 </div>
                 
-                {/* Robot Image */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <img 
-                    src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
-                    alt="Enhanced Tactical Humanoid E3N Series"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+               {/* Robot Image */}
+<div className="text-center">
+  <img 
+    src="/lovable-uploads/d11d4701-b65c-499a-b8ca-8967a8958788.png"
+    alt="Enhanced Tactical Humanoid E3N Series"
+    className="w-full h-full object-cover mx-auto mb-4 rounded-lg"
+  />
+  <p className="text-caption font-mono">Enhanced Tactical Humanoid</p>
+  <p className="text-caption font-mono text-muted-foreground">3rd Revision</p>
+</div>
                 
                 {/* Tech Lines */}
                 <div className="absolute top-1/4 left-8 w-16 h-px bg-primary/30" />
